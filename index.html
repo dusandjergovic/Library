@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="addBookAndAddedBook">
+        <div id="addBook">
+            <button id="btn">Add Book</button>
+        </div>
+    
+        <section id="containerForBooks"></section>
+    </div>
+
+
+
+    <div id="addNewBook">
+        <form method="post" required>
+            <div id="headingAndImg">
+                <h1>Add New Book</h1>
+                <img id="close" src="1.png" alt="">
+            </div>
+            
+            <input id="title" type="text" placeholder="Title" required minlength="1">
+            <input id="author" type="text" placeholder="Author" required minlength="1">
+            <input id="pages" type="number" placeholder="Pages" required min="1">
+        </form>
+
+        <div id="haveyouRead">
+            <span>Have you read it? <input type="checkbox" name="" id="readBook"></span>
+        </div>
+        <div id="btnForSubmit">
+            <button id="submit" type="button">Submit</button>
+        </div>
+    </div>
+
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
